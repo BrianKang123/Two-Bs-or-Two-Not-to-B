@@ -52,16 +52,5 @@ public class rps{
     return key[move];
   }
 
-  public static void main(String[] args) {
-    rps game = new rps();
-    int turn = 0;
-    while(true){
-      if(args.length > turn){
-        System.out.println("0: Rock\n1: Paper\n2: Scissors");
-        System.out.println("Player plays " + args[turn]);
-        game.turn(Integer.parseInt(args[turn]));
-        turn += 1;
-      }
-    }
-  }
+  
 }
