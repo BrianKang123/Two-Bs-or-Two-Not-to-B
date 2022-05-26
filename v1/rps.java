@@ -14,6 +14,8 @@ Defeat Gilgamesh
 */
 
 import java.util.ArrayList;
+import java.util.Scanner;
+
 public class rps{
   private final String[] key = {"Rock", "Paper", "Scissors"};
   private ArrayList<Integer> moves;
@@ -21,12 +23,16 @@ public class rps{
   private int pScore;
   private int tie;
   private int turns;
+  private boolean gameEnded;
+
+  Scanner input = new Scanner(System.in);
 
   public rps(){
     gScore = 0;
     pScore = 0;
     moves = new ArrayList<Integer>();
     turns = 0;
+    gameEnded = false;
   }
 
   //get a RANDOM move
@@ -36,12 +42,34 @@ public class rps{
 
   //play turns with scanner
   public boolean game(){
+    while(!gameEnded){
+      System.out.println("Rock, Paper, or Scissors?\n");
+      String pMove = input.nextLine();
+      if(pMove.equals("quit")){
+        System.out.println("Game terminated");
+        return false;
+      }
 
+      if(pMove.equals("Rock") || pMove.equals("rock")){
+        turn(0);
+      }
+      else if(pMove.equals("Paper") || pMove.equals("paper")){
+        turn(1);
+      }
+      else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor")){
+        turn(2);
+      }
+      else if (pMove){
+        turn(Integer.parseInt(pMove));
+      }
+      //FAIL CASE
+
+    }
+    return true;
   }
 
   //play a turn
   public boolean turn(int pMove){
-    System.out.println("0: Rock\n1: Paper\n2: Scissors\n");
 
     //validate move
     if(pMove > 2 || pMove < 0){
