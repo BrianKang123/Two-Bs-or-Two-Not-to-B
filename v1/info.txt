@@ -1,0 +1,3 @@
+v1: The first working copy.
+My name is Brian.
+I play moves at complete random. 
