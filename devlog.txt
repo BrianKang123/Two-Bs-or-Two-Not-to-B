@@ -71,9 +71,24 @@ yyyy-mm-dd
 2022-05-24
 --------------------------------------------------------------
 Brian Kang :: Shared repo, created README
+Brian Wang:: Worked on v0 of the rps game
 ==============================================================
 
 2022-05-25
 --------------------------------------------------------------
 Brian Wang :: Implemented working version of a basic rock paper scissors game
 Ethan Lam :: Created devlog
+
+2022-05-26
+--------------------------------------------------------------
+Brian Kang :: Created and edited Propro.pdf goog doc
+Ethan Lam :: Edited Propro.pdf on keys
+             Uploaded flag.jpg
+Brian Wang:: Worked on v1 of the rps game (implement scanner)
+
+2022-05-27
+--------------------------------------------------------------
+Brian Wang :: Worked on v2 of the rps game (begin frame of weights and machine learning)
+Ethan Lam :: Work on UML diagram hardcopy 
+Brian Kang:: Updated .gitignore with "value-added" version
+
