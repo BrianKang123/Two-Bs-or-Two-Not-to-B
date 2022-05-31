@@ -40,6 +40,7 @@ public class rps{
     //List of weights
     //Overall weight factors for final decision
     //THESE WILL LIKELY BE MANUALLY CHANGED!!!!
+    //What if we adjusted these on past plays?
     double twoWeight = 1/4;
     double threeWeight = 1/4;
     double fourWeight = 1/4;
@@ -72,51 +73,157 @@ public class rps{
     //stringify move history, easier to search
     String moveHist = "";
     for(int ele : moves){
-      moveHist += ele.toString();
+      moveHist += Integer.toString(ele);
     }
 
     //2 move batch history
     if(moves.size() > 2){
-      int rCount = 0;
-      int pCount = 0;
-      int sCount = 0;
-      int count = 0;
+      //log all past "next moves"
+      double rCount = 0;
+      double pCount = 0;
+      double sCount = 0;
+      double count = 0;
 
-      //past moves
-      String pastMoves = moveHist.subString(moveHist.length() - 1)
+      //current past moves
+      String valSet = moveHist.substring(moveHist.length() - 2, moveHist.length());
+
+      //all moves except most recent moves
+      String searchSet = moveHist.substring(0, moveHist.length() - 2);
+
+      //search for all occurrences of the past move pattern
+      while(searchSet.indexOf(valSet) != -1 && searchSet.indexOf(valSet) < searchSet.length() - 2){
+        String nextMove = searchSet.substring(searchSet.indexOf(valSet) + 2);
+        //only eliminate the first string but not the entire match incase self recurring
+        searchSet = searchSet.substring(searchSet.indexOf(valSet) + 1);
+        //count rock paper or scissors
+        if(nextMove.equals("0")){
+          rCount += 1;
+        }
+        else if(nextMove.equals("1")){
+          pCount += 1;
+        }
+        else{
+          sCount += 1;
+        }
+        //total move count
+        count += 1;
+
+        twoRWeight = rCount * 1.0 / count;
+        twoPWeight = pCount * 1.0 / count;
+        twoSWeight = sCount * 1.0 / count;
+      }
+
     }
 
     //3 move batch history
-    if(moves.size() > 3){
-      int rCount = 0;
-      int pCount = 0;
-      int sCount = 0;
-      int count = 0;
+    else if(moves.size() > 3){
+      double rCount = 0;
+      double pCount = 0;
+      double sCount = 0;
+      double count = 0;
 
-      //past moves
-      String pastMoves = moveHist.subString(moveHist.length() - 2)
+      //current past moves
+      String valSet = moveHist.substring(moveHist.length() - 3, moveHist.length());
+
+      //all moves except most recent moves
+      String searchSet = moveHist.substring(0, moveHist.length() - 3);
+
+      //search for all occurrences of the past move pattern
+      while(searchSet.indexOf(valSet) != -1 && searchSet.indexOf(valSet) < searchSet.length() - 3){
+        String nextMove = searchSet.substring(searchSet.indexOf(valSet) + 3);
+        //only eliminate the first string but not the entire match incase self recurring
+        searchSet = searchSet.substring(searchSet.indexOf(valSet) + 1);
+        //count rock paper or scissors
+        if(nextMove.equals("0")){
+          rCount += 1;
+        }
+        else if(nextMove.equals("1")){
+          pCount += 1;
+        }
+        else{
+          sCount += 1;
+        }
+        //total move count
+        count += 1;
+
+        threeRWeight = rCount * 1.0 / count;
+        threePWeight = pCount * 1.0 / count;
+        threeSWeight = sCount * 1.0 / count;
+      }
     }
 
     //4 move batch history
-    if(moves.size() > 4){
-      int rCount = 0;
-      int pCount = 0;
-      int sCount = 0;
-      int count = 0;
+    else if(moves.size() > 4){
+      double rCount = 0;
+      double pCount = 0;
+      double sCount = 0;
+      double count = 0;
 
-      //past moves
-      String pastMoves = moveHist.subString(moveHist.length() - 3)
+      //current past movessize
+      String valSet = moveHist.substring(moveHist.length() - 4, moveHist.length());
+
+      //all moves except most recent moves
+      String searchSet = moveHist.substring(0, moveHist.length() - 4);
+
+      //search for all occurrences of the past move pattern
+      while(searchSet.indexOf(valSet) != -1 && searchSet.indexOf(valSet) < searchSet.length() - 4){
+        String nextMove = searchSet.substring(searchSet.indexOf(valSet) + 4);
+        //only eliminate the first string but not the entire match incase self recurring
+        searchSet = searchSet.substring(searchSet.indexOf(valSet) + 1);
+        //count rock paper or scissors
+        if(nextMove.equals("0")){
+          rCount += 1;
+        }
+        else if(nextMove.equals("1")){
+          pCount += 1;
+        }
+        else{
+          sCount += 1;
+        }
+        //total move count
+        count += 1;
+
+        fourRWeight = rCount * 1.0 / count;
+        fourPWeight = pCount * 1.0 / count;
+        fourSWeight = sCount * 1.0 / count;
+      }
     }
 
     //5 move batch history
-    if(moves.size() > 5){
-      int rCount = 0;
-      int pCount = 0;
-      int sCount = 0;
-      int count = 0;
+    else if(moves.size() > 5){
+      double rCount = 0;
+      double pCount = 0;
+      double sCount = 0;
+      double count = 0;
 
-      //past moves
-      String pastMoves = moveHist.subString(moveHist.length() - 4)
+      //current past moves
+      String valSet = moveHist.substring(moveHist.length() - 5, moveHist.length());
+
+      //all moves except most recent moves
+      String searchSet = moveHist.substring(0, moveHist.length() - 5);
+
+      //search for all occurrences of the past move pattern
+      while(searchSet.indexOf(valSet) != -1 && searchSet.indexOf(valSet) < searchSet.length() - 5){
+        String nextMove = searchSet.substring(searchSet.indexOf(valSet) + 5);
+        //only eliminate the first string but not the entire match incase self recurring
+        searchSet = searchSet.substring(searchSet.indexOf(valSet) + 1);
+        //count rock paper or scissors
+        if(nextMove.equals("0")){
+          rCount += 1;
+        }
+        else if(nextMove.equals("1")){
+          pCount += 1;
+        }
+        else{
+          sCount += 1;
+        }
+        //total move count
+        count += 1;
+
+        fiveRWeight = rCount * 1.0 / count;
+        fivePWeight = pCount * 1.0 / count;
+        fiveSWeight = sCount * 1.0 / count;
+      }
     }
 
     //Actual chance for each of the three moves
@@ -137,25 +244,32 @@ public class rps{
     double rThresh = rChance;
     double pThresh = rChance + pChance;
     //sThresh maybe redundant?
-    double sThresh = 1 - pThresh;
+    double sThresh = 1;
     //<!> CHECK IF ADD TO 1!!<!>
     //debugging
+    System.out.println("Thresholds: ");
     System.out.println("rThresh: " + rThresh);
     System.out.println("pThresh: " + pThresh);
     System.out.println("sThresh: " + sThresh);
+
+    System.out.println("\n\nWeights: ");
+    System.out.println("rWeight: " + twoRWeight + " " + threeRWeight + " " + fourRWeight + " " + fiveRWeight);
+    System.out.println("pWeight: " + twoPWeight + " " + threePWeight + " " + fourPWeight + " " + fivePWeight);
+    System.out.println("sWeight: " + twoSWeight + " " + threeSWeight + " " + fourSWeight + " " + fiveSWeight);
+
     double total = rThresh + pThresh + sThresh;
     System.out.println("Total: " + total);
 
     //The move returned
-    int rando = Math.Random();
+    double rando = Math.random();
     if(rando > rThresh){
-      return 0;
-    }
-    else if(rando > pThresh){
       return 1;
     }
-    else{
+    else if(rando > pThresh){
       return 2;
+    }
+    else{
+      return 0;
     }
   }
 
@@ -170,16 +284,16 @@ public class rps{
         return false;
       }
 
-      if(pMove.equals("Rock") || pMove.equals("rock")){
+      if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
         turn(0);
       }
-      else if(pMove.equals("Paper") || pMove.equals("paper")){
+      else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
         turn(1);
       }
-      else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor")){
+      else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
         turn(2);
       }
-      else if (pMove){
+      else{
         turn(Integer.parseInt(pMove));
       }
       //FAIL CASE
