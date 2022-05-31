@@ -89,6 +89,11 @@ Brian Wang:: Worked on v1 of the rps game (implement scanner)
 2022-05-27
 --------------------------------------------------------------
 Brian Wang :: Worked on v2 of the rps game (begin frame of weights and machine learning)
-Ethan Lam :: Work on UML diagram hardcopy 
+Ethan Lam :: Work on UML diagram hardcopy
 Brian Kang:: Updated .gitignore with "value-added" version
 
+2022-05-30
+--------------------------------------------------------------
+I forgor :skull:
+Brian Wang :: implemented part of the weight system for use by Gilgamesh
+              Maybe overall weights can be dynamically adjusted by past play accuracies?
