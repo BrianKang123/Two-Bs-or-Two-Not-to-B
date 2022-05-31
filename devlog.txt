@@ -97,3 +97,14 @@ Brian Kang:: Updated .gitignore with "value-added" version
 I forgor :skull:
 Brian Wang :: implemented part of the weight system for use by Gilgamesh
               Maybe overall weights can be dynamically adjusted by past play accuracies?
+
+2022-05-31
+--------------------------------------------------------------
+Brian Wang :: Gilgamesh finished?
+              Lots of bugs squashed. Biggest bug was some problems with doubles and how they work.
+              Weird that Gilgamesh AI only really starts kicking in after 10 moves? it should be 5. I'll look into it.
+              Gilgamesh seems to win at around a 30 to 50% winrate against more "random" moves, with the player hovering around 10% to 20% lower. That is pretty good.
+              The main problem is the slow learning time that costs a lot of wins.
+              This could be solved with dynamic weights for the importance of 1, 2, 3, 4, and 5 move patterns, but that is too smart for Gilgamesh.
+              I think that needs to be put into an even smarter bot, Enkidu.
+              Also made bad inputs more forgiving. 
