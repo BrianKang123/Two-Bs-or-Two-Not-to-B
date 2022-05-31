@@ -12,8 +12,8 @@
 
 ## Different Bot Opponents:
 ##### v0 - N/A 
-##### v1 - `Brian (Random Choice Bot)`
-##### v2 - `Gilgasmesh (Analyzes Patterns in Playstyle To Make Next Move)`
-##### v3 - `Eobard (Keeps Track of Previous Moves You Have Played and Will Play Advantageous Moves)`
+##### v1 - Brian (Random Choice Bot)
+##### v2 - Gilgasmesh (Analyzes Patterns in Playstyle To Make Next Move)
+##### v3 - Eobard (Keeps Track of Previous Moves You Have Played and Will Play Advantageous Moves)
 ##### v4 
 #####
