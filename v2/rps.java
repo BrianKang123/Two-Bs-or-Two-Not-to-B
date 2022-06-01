@@ -371,7 +371,7 @@ public class rps{
     double sThresh = rChance + pChance + sChance;
     //<!> CHECK IF ADD TO 1!!<!>
     //debugging
-/*
+
     System.out.println("\n\nThresholds: ");
     System.out.println("rThresh: " + rThresh);
     System.out.println("pThresh: " + pThresh);
@@ -381,7 +381,7 @@ public class rps{
     System.out.println("rWeight: " + oneRWeight + " " + twoRWeight + " " + threeRWeight + " " + fourRWeight + " " + fiveRWeight);
     System.out.println("pWeight: " + onePWeight + " " + twoPWeight + " " + threePWeight + " " + fourPWeight + " " + fivePWeight);
     System.out.println("sWeight: " + oneSWeight + " " + twoSWeight + " " + threeSWeight + " " + fourSWeight + " " + fiveSWeight);
-    */
+    System.out.println("Move #: " + moves.size());
 /*
     System.out.println("\n\nAssorted Info: ");
     System.out.println("rCount: " + rCount);
