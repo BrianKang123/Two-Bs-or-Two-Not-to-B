@@ -108,3 +108,5 @@ Brian Wang :: Gilgamesh finished?
               This could be solved with dynamic weights for the importance of 1, 2, 3, 4, and 5 move patterns, but that is too smart for Gilgamesh.
               I think that needs to be put into an even smarter bot, Enkidu.
               Also made bad inputs more forgiving. 
+Brian Kang :: Edited READ.md File with Bot Instructions
+Ethan Lam :: Worked on v3 of the rps game 
