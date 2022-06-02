@@ -10,7 +10,7 @@ Moves:
 1. Paper
 2. Scissors
 
-Defeat Gilgamesh
+Defeat Enkidu
 */
 
 import java.util.ArrayList;
@@ -346,6 +346,18 @@ public class rps{
       */
     }
 
+    //one/two/three/four/fiveWeight balancing
+    //explain?
+    double weightSum = Math.abs(Math.abs(oneRWeight - onePWeight) - oneSWeight)
+                     + Math.abs(Math.abs(twoRWeight - twoPWeight) - twoSWeight)
+                     + Math.abs(Math.abs(threeRWeight - threePWeight) - threeSWeight)
+                     + Math.abs(Math.abs(fourRWeight - fourPWeight) - fourSWeight)
+                     + Math.abs(Math.abs(fiveRWeight - fivePWeight) - fiveSWeight);
+    oneWeight = Math.abs(Math.abs(oneRWeight - onePWeight) - oneSWeight)/weightSum;
+    twoWeight = Math.abs(Math.abs(twoRWeight - twoPWeight) - twoSWeight)/weightSum;
+    threeWeight = Math.abs(Math.abs(threeRWeight - threePWeight) - threeSWeight)/weightSum;
+    fourWeight = Math.abs(Math.abs(fourRWeight - fourPWeight) - fourSWeight)/weightSum;
+    fiveWeight = Math.abs(Math.abs(fiveRWeight - fivePWeight) - fiveSWeight)/weightSum;
 
     //Actual chance for each of the three moves
     double rChance = oneWeight * oneRWeight
@@ -382,6 +394,13 @@ public class rps{
     System.out.println("pWeight: " + onePWeight + " " + twoPWeight + " " + threePWeight + " " + fourPWeight + " " + fivePWeight);
     System.out.println("sWeight: " + oneSWeight + " " + twoSWeight + " " + threeSWeight + " " + fourSWeight + " " + fiveSWeight);
     System.out.println("Move #: " + moves.size());
+    System.out.println("\n\nOverall weights: ");
+    System.out.println("weightSum: " + weightSum);
+    System.out.println("oneWeight: " + oneWeight);
+    System.out.println("twoWeight: " + twoWeight);
+    System.out.println("threeWeight: " + threeWeight);
+    System.out.println("fourWeight: " + fourWeight);
+    System.out.println("fiveWeight: " + fiveWeight + "\n");
 /*
     System.out.println("\n\nAssorted Info: ");
     System.out.println("rCount: " + rCount);
@@ -452,7 +471,7 @@ public class rps{
     int gMove = play();
     moves.add(pMove);
     System.out.println("Player plays " + key[pMove]);
-    System.out.println("Gilgamesh plays " + key[gMove]);
+    System.out.println("Enkidu plays " + key[gMove]);
 
 
     turns += 1;
@@ -464,9 +483,9 @@ public class rps{
       return true;
     }
 
-    //If Gilgamesh wins
+    //If Enkidu wins
     else if(gMove - pMove == 1 || gMove - pMove == -2){
-      System.out.println("Gilgamesh wins\n\n");
+      System.out.println("Enkidu wins\n\n");
       gScore += 1;
       return false;
     }

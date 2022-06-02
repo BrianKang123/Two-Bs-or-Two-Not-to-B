@@ -16,7 +16,7 @@ Defeat Eobard
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class eobard{
+public class rps{
   private final String[] key = {"Rock", "Paper", "Scissors"};
   private ArrayList<Integer> moves;
   private int gScore;
@@ -30,7 +30,7 @@ public class eobard{
 
   Scanner input = new Scanner(System.in);
 
-  public eobard(){
+  public rps(){
     gScore = 0;
     pScore = 0;
     moves = new ArrayList<Integer>();
@@ -48,13 +48,13 @@ public class eobard{
     }
     int value = (int)(Math.random() * (turns+1));
     if(value < rocksPlayed){
-      return 0;
-    }
-    if(value < rocksPlayed + papersPlayed){
       return 1;
     }
-    if(value < rocksPlayed + papersPlayed + scissorsPlayed ){
+    if(value < rocksPlayed + papersPlayed){
       return 2;
+    }
+    if(value < rocksPlayed + papersPlayed + scissorsPlayed ){
+      return 0;
     }
     return 0;
   }
@@ -157,7 +157,7 @@ public class eobard{
   }
 
   public static void main(String[] args) {
-    eobard game = new eobard();
+    rps game = new rps();
     int turn = 0;
     while(true){
       if(args.length > turn){
