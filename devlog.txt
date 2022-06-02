@@ -107,12 +107,17 @@ Brian Wang :: Gilgamesh finished?
               The main problem is the slow learning time that costs a lot of wins.
               This could be solved with dynamic weights for the importance of 1, 2, 3, 4, and 5 move patterns, but that is too smart for Gilgamesh.
               I think that needs to be put into an even smarter bot, Enkidu.
-              Also made bad inputs more forgiving. 
+              Also made bad inputs more forgiving.
 Brian Kang :: Edited READ.md File with Bot Instructions
-Ethan Lam :: Worked on v3 of the rps game 
+Ethan Lam :: Worked on v3 of the rps game
 Everyone :: Worked on FlowChart
 
 2022-06-01
 --------------------------------------------------------------
-Brian Wang :: Worked on v4 of the rps game
+Brian Wang :: Worked on v4 of the rps game, Enkidu, as described before. However, the new weight rebalancing system might not be working properly.
+              I might port the weight sets as attributes to the bot and then instead have another whole method.
 Brian Kang:: Worked on v6 of the rps game (Cheater Bot)
+
+2022-06-02
+--------------------------------------------------------------
+Brian Wang :: rps updated to accomodate lists of moves instead of just single moves

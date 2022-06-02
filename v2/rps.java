@@ -371,7 +371,7 @@ public class rps{
     double sThresh = rChance + pChance + sChance;
     //<!> CHECK IF ADD TO 1!!<!>
     //debugging
-
+/*
     System.out.println("\n\nThresholds: ");
     System.out.println("rThresh: " + rThresh);
     System.out.println("pThresh: " + pThresh);
@@ -412,26 +412,30 @@ public class rps{
   public boolean game(){
     while(!gameEnded){
       System.out.println("Rock, Paper, or Scissors?\n");
-      String pMove = input.nextLine();
+      String pMoveList = input.nextLine();
       //quit
-      if(pMove.equals("quit")){
+      if(pMoveList.equals("quit")){
         System.out.println("Game terminated");
         return false;
       }
+      while(pMoveList.length() > 0){
+        String pMove = pMoveList.substring(pMoveList.length() - 1);
+        pMoveList = pMoveList.substring(0, pMoveList.length() - 1);
 
-      if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
-        turn(0);
+
+        if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
+          turn(0);
+        }
+        else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
+          turn(1);
+        }
+        else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
+          turn(2);
+        }
+        else{
+          System.out.println("Enter a valid move!\n\n");;
+        }
       }
-      else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
-        turn(1);
-      }
-      else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
-        turn(2);
-      }
-      else{
-        System.out.println("Enter a valid move!\n\n");;
-      }
-      //FAIL CASE
 
     }
     return true;
