@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class eobard{
+public class rps{
   private final String[] key = {"Rock", "Paper", "Scissors"};
   private ArrayList<Integer> moves;
   private int gScore;
@@ -24,8 +24,18 @@ public class eobard{
   }
 
   //get a RANDOM move
-  public int play(){
-    return (int)(Math.random() * 3);
+  public int play(int pMove){
+    int aMove = -1;
+    if(pMove == 0){
+      aMove = 1;
+    }
+    else if(pMove == 1){
+      aMove = 2;
+    }
+    else if(pMove == 2){
+      aMove = 0;
+    }
+    return aMove;
   }
 
   //play turns with scanner
@@ -66,7 +76,7 @@ public class eobard{
     }
 
     //rng number
-    int gMove = play();
+    int gMove = play(pMove);
     System.out.println("Player plays " + key[pMove]);
     System.out.println("Gilgamesh plays " + key[gMove]);
 
