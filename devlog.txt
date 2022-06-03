@@ -121,3 +121,8 @@ Brian Kang:: Worked on v6 of the rps game (Cheater Bot)
 2022-06-02
 --------------------------------------------------------------
 Brian Wang :: rps updated to accomodate lists of moves instead of just single moves
+
+2022-06-03
+--------------------------------------------------------------
+Brian Wang :: Worked on v4 of the rps game, Enkidu. 
+Brian Kang :: Worked on v6 of the rps game (Cheater Bot- Anticipates your moves and wins no matter what)
