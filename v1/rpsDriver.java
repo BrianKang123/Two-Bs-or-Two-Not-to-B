@@ -1,4 +1,5 @@
 
+
 public class rpsDriver{
 
     public static void main(String[] args) {
@@ -7,10 +8,10 @@ public class rpsDriver{
       newGame.game();
       System.out.println(newGame.getMoveHistory());
       System.out.println("Games played: " + newGame.getTurn());
-      double pWinPercent = newGame.getPScore() * 1.0 / newGame.getTurn();
-      double gWinPercent = newGame.getGScore() * 1.0 / newGame.getTurn();
-      System.out.println("Player score: " + newGame.getPScore() + " (Winrate: " + pWinPercent + "%)");
-      System.out.println("Maurice score: " + newGame.getGScore() + " (Winrate: " + gWinPercent + "%)");
+      double pWinPercent = newGame.getPScore() * 1.0 / (newGame.getPScore() + newGame.getGScore());
+      double gWinPercent = newGame.getGScore() * 1.0 / (newGame.getPScore() + newGame.getGScore());
+      System.out.println("Player score: " + newGame.getPScore() + " (Winrate: " + (int)(100 * pWinPercent) + "%)");
+      System.out.println("Maurice score: " + newGame.getGScore() + " (Winrate: " + (int)(100 * gWinPercent) + "%)");
       System.out.println("Ties: " + newGame.getTie());
     }
 
@@ -18,4 +19,3 @@ public class rpsDriver{
 
 
 }
-
