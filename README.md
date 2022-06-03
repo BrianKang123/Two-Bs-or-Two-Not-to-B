@@ -15,7 +15,7 @@
 ##### v1 - Brian (Random Choice Bot)
 ##### v2 - Gilgamesh (Analyzes Patterns in Playstyle To Make Next Move- Quality)
 ##### v3 - Eobard (Keeps Track of Previous Moves You Have Played and Will Play Advantageous Moves- Quantity)
-##### v4 - Sal (Analyzes Patterns in Playstyle To Lose in the Next Move)
-##### v5 - Enkidu (Smarter Gilgamesh With Improved Prediction Capabilities)
-##### v6 -
-##### v7 -
+##### v4 - Enkidu (Smarter Gilgamesh With Improved Prediction Capabilities)
+##### v5 - Sal (Analyzes Patterns in Playstyle To Lose in the Next Move)
+##### v6 - Sol (Cheater Bot- Anticipates Your Moves And Wins No Matter What)
+##### v7 - 
