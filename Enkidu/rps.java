@@ -441,21 +441,32 @@ public class rps{
       }
       while(pMoveList.length() > 0){
         String pMove = pMoveList.substring(pMoveList.length() - 1);
-        pMoveList = pMoveList.substring(0, pMoveList.length() - 1);
 
 
-        if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
+
+        if(pMoveList.equals("Rock") || pMoveList.equals("rock")){
           turn(0);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 3);
         }
-        else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
+        else if(pMoveList.equals("Paper") || pMoveList.equals("paper")){
           turn(1);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 4);
         }
-        else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
+        else if(pMoveList.equals("Scissors") || pMoveList.equals("scissors")){
           turn(2);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 7);
+        }
+        else if(pMoveList.equals("Scissor") || pMoveList.equals("scissor")){
+          turn(2);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 6);
+        }
+        else if(Integer.parseInt(pMove) == 0 || Integer.parseInt(pMove) == 1 || Integer.parseInt(pMove) == 2){
+          turn(Integer.parseInt(pMove));
         }
         else{
           System.out.println("Enter a valid move!\n\n");;
         }
+        pMoveList = pMoveList.substring(0, pMoveList.length() - 1);
       }
 
     }

@@ -1,5 +1,10 @@
 V4: The smarter iteration.
+
+Bio:
 My name is Enkidu.
 I kill gods.
 
+Strategy:
+Enkidu analyzes past patterns to predict the percentage of the next move being a rock, paper, or scissors.
+All the while doing it (slightly) better than Gilgamesh. 
 Try to win.
