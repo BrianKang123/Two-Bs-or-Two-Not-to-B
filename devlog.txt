@@ -117,12 +117,15 @@ Everyone :: Worked on FlowChart
 Brian Wang :: Worked on v4 of the rps game, Enkidu, as described before. However, the new weight rebalancing system might not be working properly.
               I might port the weight sets as attributes to the bot and then instead have another whole method.
 Brian Kang:: Worked on v6 of the rps game (Cheater Bot)
+Ethan Lam :: Eobard (v3) created, tested, uses past # of move to figure out %s
 
 2022-06-02
 --------------------------------------------------------------
 Brian Wang :: rps updated to accomodate lists of moves instead of just single moves
+Ethan Lam :: Tested many rps games in order to test performance
+Brian Kang :: Worked on v6 of the rps game (Cheater Bot- Anticipates your moves and wins no matter what)
 
 2022-06-03
 --------------------------------------------------------------
-Brian Wang :: Worked on v4 of the rps game, Enkidu. 
-Brian Kang :: Worked on v6 of the rps game (Cheater Bot- Anticipates your moves and wins no matter what)
+Brian Wang :: Updated driver files for all versions to be more compatible
+Brian Kang :: Worked on v6 of the rps game (Sol)
