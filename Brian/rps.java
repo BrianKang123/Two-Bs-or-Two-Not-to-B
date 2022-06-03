@@ -10,7 +10,7 @@ Moves:
 1. Paper
 2. Scissors
 
-Defeat Eobard
+Defeat Gilgamesh
 */
 
 import java.util.ArrayList;
@@ -24,9 +24,6 @@ public class rps{
   private int tie;
   private int turns;
   private boolean gameEnded;
-  private int rocksPlayed;
-  private int papersPlayed;
-  private int scissorsPlayed;
 
   Scanner input = new Scanner(System.in);
 
@@ -36,57 +33,36 @@ public class rps{
     moves = new ArrayList<Integer>();
     turns = 0;
     gameEnded = false;
-    rocksPlayed = 0;
-    papersPlayed = 0;
-    scissorsPlayed = 0;
   }
 
   //get a RANDOM move
   public int play(){
-    if(turns <= 3){
-      return (int)(Math.random() * 3);
-    }
-    int value = (int)(Math.random() * (turns+1));
-    if(value < rocksPlayed){
-      return 1;
-    }
-    if(value < rocksPlayed + papersPlayed){
-      return 2;
-    }
-    if(value < rocksPlayed + papersPlayed + scissorsPlayed ){
-      return 0;
-    }
-    return 0;
+    return (int)(Math.random() * 3);
   }
 
   //play turns with scanner
   public boolean game(){
     while(!gameEnded){
       System.out.println("Rock, Paper, or Scissors?\n");
-      String pMoveList = input.nextLine();
-      //quit
-      if(pMoveList.equals("quit")){
+      String pMove = input.nextLine();
+      if(pMove.equals("quit")){
         System.out.println("Game terminated");
         return false;
       }
-      while(pMoveList.length() > 0){
-        String pMove = pMoveList.substring(pMoveList.length() - 1);
-        pMoveList = pMoveList.substring(0, pMoveList.length() - 1);
 
-
-        if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
-          turn(0);
-        }
-        else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
-          turn(1);
-        }
-        else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
-          turn(2);
-        }
-        else{
-          System.out.println("Enter a valid move!\n\n");;
-        }
+      if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
+        turn(0);
       }
+      else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
+        turn(1);
+      }
+      else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
+        turn(2);
+      }
+      else{
+        turn(Integer.parseInt(pMove) );
+      }
+      //FAIL CASE
 
     }
     return true;
@@ -104,7 +80,7 @@ public class rps{
     //rng number
     int gMove = play();
     System.out.println("Player plays " + key[pMove]);
-    System.out.println("Eobard plays " + key[gMove]);
+    System.out.println("Gilgamesh plays " + key[gMove]);
 
     moves.add(pMove);
     turns += 1;
@@ -118,7 +94,7 @@ public class rps{
 
     //If Gilgamesh wins
     else if(gMove - pMove == 1 || gMove - pMove == -2){
-      System.out.println("Eobard wins\n\n");
+      System.out.println("Gilgamesh wins\n\n");
       gScore += 1;
       return false;
     }
