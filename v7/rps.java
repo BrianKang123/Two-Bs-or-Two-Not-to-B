@@ -1,18 +1,3 @@
-/*
-Two-Bs-or-Two-Not-to-B (Brian Wang, Brian Kang, Ethan Lam)
-Final Project Iteration 0
-
-Notes:
-Second version of the game will run completely randomly. And actually work.
-
-Moves:
-0. Rock
-1. Paper
-2. Scissors
-
-Defeat Eobard
-*/
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -36,27 +21,21 @@ public class rps{
     moves = new ArrayList<Integer>();
     turns = 0;
     gameEnded = false;
-    rocksPlayed = 0;
-    papersPlayed = 0;
-    scissorsPlayed = 0;
   }
 
   //get a RANDOM move
-  public int play(){
-    if(turns <= 3){
-      return (int)(Math.random() * 3);
+  public int play(int pMove){
+    int aMove = -1;
+    if(pMove == 0){
+      aMove = 2;
     }
-    int value = (int)(Math.random() * (turns+1));
-    if(value < rocksPlayed){
-      return 0;
+    else if(pMove == 1){
+      aMove = 0;
     }
-    if(value < rocksPlayed + papersPlayed){
-      return 1;
+    else if(pMove == 2){
+      aMove = 1;
     }
-    if(value < rocksPlayed + papersPlayed + scissorsPlayed ){
-      return 2;
-    }
-    return 0;
+    return aMove;
   }
 
   //play turns with scanner
@@ -102,9 +81,9 @@ public class rps{
     }
 
     //rng number
-    int gMove = play();
+    int gMove = play(pMove);
     System.out.println("Player plays " + key[pMove]);
-    System.out.println("Eobard plays " + key[gMove]);
+    System.out.println("Sol plays " + key[gMove]);
 
     moves.add(pMove);
     turns += 1;
@@ -118,7 +97,7 @@ public class rps{
 
     //If Gilgamesh wins
     else if(gMove - pMove == 1 || gMove - pMove == -2){
-      System.out.println("Eobard wins\n\n");
+      System.out.println("Sol wins\n\n");
       gScore += 1;
       return false;
     }
