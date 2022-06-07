@@ -20,6 +20,7 @@ public class Brian extends rps{
 
   public Brian(){
     super();
+    super.setName("Brian");
     }
 
   //get a RANDOM move

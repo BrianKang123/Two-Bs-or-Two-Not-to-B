@@ -6,9 +6,10 @@ public class Sol extends rps{
 
   public Sol(){
     super();
+    super.setName("Sol");
   }
 
-  //get a RANDOM move
+  //get a WINNING move
   public int play(int pMove){
     int aMove = -1;
     if(pMove == 0){

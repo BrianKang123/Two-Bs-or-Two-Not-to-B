@@ -10,27 +10,21 @@ public class rpsDriver{
       }
       else if(args[0].equals("Brian") || args[0].equals("brian")){
         newGame = new Brian();
-        botName = "Brian";
       }
       else if(args[0].equals("Enkidu") || args[0].equals("enkidu")){
         newGame = new Enkidu();
-        botName = "Enkidu";
       }
       else if(args[0].equals("Eobard") || args[0].equals("eobard")){
         newGame = new Eobard();
-        botName = "Eobard";
       }
       else if(args[0].equals("Gilgamesh") || args[0].equals("gilgamesh")){
         newGame = new Gilgamesh();
-        botName = "Gilgamesh";
       }
       else if(args[0].equals("Sal") || args[0].equals("sal")){
         newGame = new Sal();
-        botName = "Sal";
       }
       else if(args[0].equals("Sol") || args[0].equals("sol")){
         newGame = new Sol();
-        botName = "Sol";
       }
       else{
         System.out.println("Invalid bot entered, default played");
@@ -38,6 +32,7 @@ public class rpsDriver{
       System.out.println("You will be playing: " + botName + ",\n");
       System.out.println(newGame.getInfo() + "\n\n");
 
+      botName = newGame.getName();
       newGame.game();
       System.out.println(newGame.getMoveHistory());
       System.out.println("Games played: " + newGame.getTurn());

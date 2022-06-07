@@ -21,6 +21,7 @@ public class Eobard extends rps{
 
   public Eobard(){
     super();
+        super.setName("Eobard");
   }
 
   //get a RANDOM move

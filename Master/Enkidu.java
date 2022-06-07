@@ -20,6 +20,7 @@ public class Enkidu extends rps{
 
   public Enkidu(){
     super();
+        super.setName("Enkidu");
   }
 
   //get a "smart" move

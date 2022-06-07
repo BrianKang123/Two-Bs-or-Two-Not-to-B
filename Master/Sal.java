@@ -19,6 +19,7 @@ public class Sal extends rps{
 
   public Sal(){
     super();
+    super.setName("Sal");
   }
 
   //get a "smart" move

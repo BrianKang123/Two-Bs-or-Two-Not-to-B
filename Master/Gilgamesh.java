@@ -21,6 +21,7 @@ public class Gilgamesh extends rps{
 
   public Gilgamesh(){
       super();
+      super.setName("Gilgamesh");
     }
 
   //get a "smart" move

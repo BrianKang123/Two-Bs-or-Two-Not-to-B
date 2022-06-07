@@ -27,6 +27,7 @@ public class rps{
   protected int rocksPlayed;
   protected int papersPlayed;
   protected int scissorsPlayed;
+  protected String name;
 
   Scanner input = new Scanner(System.in);
 
@@ -36,6 +37,10 @@ public class rps{
     moves = new ArrayList<Integer>();
     turns = 0;
     gameEnded = false;
+    rocksPlayed = 0;
+    papersPlayed = 0;
+    scissorsPlayed = 0;
+    name = "Brian";
   }
 
   //get a RANDOM move
@@ -102,7 +107,7 @@ public class rps{
     int gMove = play();
     moves.add(pMove);
     System.out.println("Player plays " + key[pMove]);
-    System.out.println("Enkidu plays " + key[gMove]);
+    System.out.println(name + " plays " + key[gMove]);
 
 
     turns += 1;
@@ -116,7 +121,7 @@ public class rps{
 
     //If Enkidu wins
     else if(gMove - pMove == 1 || gMove - pMove == -2){
-      System.out.println("Enkidu wins\n\n");
+      System.out.println(name + " wins\n\n");
       gScore += 1;
       return false;
     }
@@ -158,6 +163,14 @@ public class rps{
 
   public String getInfo(){
     return "placeholder";
+  }
+
+  public String getName(){
+    return name;
+  }
+
+  public void setName(String x){
+    name = x;
   }
 
   public static void main(String[] args) {
