@@ -75,18 +75,22 @@ public class rps{
 
 
         if(pMoveList.equals("Rock") || pMoveList.equals("rock")){
+          rocksPlayed++;
           turn(0);
           pMoveList = pMoveList.substring(0, pMoveList.length() - 3);
         }
         else if(pMoveList.equals("Paper") || pMoveList.equals("paper")){
+          papersPlayed++;
           turn(1);
           pMoveList = pMoveList.substring(0, pMoveList.length() - 4);
         }
         else if(pMoveList.equals("Scissors") || pMoveList.equals("scissors")){
+          scissorsPlayed++;
           turn(2);
           pMoveList = pMoveList.substring(0, pMoveList.length() - 7);
         }
         else if(pMoveList.equals("Scissor") || pMoveList.equals("scissor")){
+          scissorsPlayed++;
           turn(2);
           pMoveList = pMoveList.substring(0, pMoveList.length() - 6);
         }
