@@ -44,25 +44,41 @@ public class rps{
   public boolean game(){
     while(!gameEnded){
       System.out.println("Rock, Paper, or Scissors?\n");
-      String pMove = input.nextLine();
-      if(pMove.equals("quit")){
+      String pMoveList = input.nextLine();
+      //quit
+      if(pMoveList.equals("quit")){
         System.out.println("Game terminated");
         return false;
       }
+      while(pMoveList.length() > 0){
+        String pMove = pMoveList.substring(pMoveList.length() - 1);
 
-      if(pMove.equals("Rock") || pMove.equals("rock") || pMove.equals("0")){
-        turn(0);
+
+
+        if(pMoveList.equals("Rock") || pMoveList.equals("rock")){
+          turn(0);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 3);
+        }
+        else if(pMoveList.equals("Paper") || pMoveList.equals("paper")){
+          turn(1);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 4);
+        }
+        else if(pMoveList.equals("Scissors") || pMoveList.equals("scissors")){
+          turn(2);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 7);
+        }
+        else if(pMoveList.equals("Scissor") || pMoveList.equals("scissor")){
+          turn(2);
+          pMoveList = pMoveList.substring(0, pMoveList.length() - 6);
+        }
+        else if(Integer.parseInt(pMove) == 0 || Integer.parseInt(pMove) == 1 || Integer.parseInt(pMove) == 2){
+          turn(Integer.parseInt(pMove));
+        }
+        else{
+          System.out.println("Enter a valid move!\n\n");;
+        }
+        pMoveList = pMoveList.substring(0, pMoveList.length() - 1);
       }
-      else if(pMove.equals("Paper") || pMove.equals("paper") || pMove.equals("1")){
-        turn(1);
-      }
-      else if(pMove.equals("Scissors") || pMove.equals("scissors") || pMove.equals("Scissor") || pMove.equals("scissor") || pMove.equals("2")){
-        turn(2);
-      }
-      else{
-        turn(Integer.parseInt(pMove) );
-      }
-      //FAIL CASE
 
     }
     return true;

@@ -416,5 +416,10 @@ public class Enkidu extends rps{
     }
   }
 
+  public String getInfo(){
+    return "The smartest, plays a move based on your past move patterns.";
+  }
+
+
 
 }

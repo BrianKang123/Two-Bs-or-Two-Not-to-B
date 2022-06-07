@@ -415,5 +415,9 @@ public class Sal extends rps{
     }
   }
 
-  
+  public String getInfo(){
+    return "Tries to lose.";
+  }
+
+
 }

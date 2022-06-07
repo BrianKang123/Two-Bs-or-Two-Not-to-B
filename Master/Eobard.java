@@ -41,5 +41,10 @@ public class Eobard extends rps{
     return 0;
   }
 
+  public String getInfo(){
+    return "Plays a move depending on your past moves played.";
+  }
+
+
 
 }

@@ -396,5 +396,9 @@ public class Gilgamesh extends rps{
     }
   }
 
+  public String getInfo(){
+    return "Smart, plays a move based on your past move patterns.";
+  }
+
 
 }

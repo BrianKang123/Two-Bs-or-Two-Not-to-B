@@ -23,5 +23,10 @@ public class Sol extends rps{
     return aMove;
   }
 
-  
+  public String getInfo(){
+    return "Just wins.";
+  }
+
+
+
 }

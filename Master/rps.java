@@ -156,6 +156,10 @@ public class rps{
     return turns;
   }
 
+  public String getInfo(){
+    return "placeholder";
+  }
+
   public static void main(String[] args) {
     rps game = new rps();
     int turn = 0;

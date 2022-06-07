@@ -130,3 +130,16 @@ Brian Kang :: Worked on v6 of the rps game (Cheater Bot- Anticipates your moves 
 Brian Wang :: Updated driver files for all versions to be more compatible
               Began work on v5 (Sal), v4 (Enkidu) but loses instead
 Brian Kang :: Worked on v6 of the rps game (Sol)
+
+2022-06-06
+--------------------------------------------------------------
+Brian Wang :: Created Master, allows running of all bots from one folder.
+              All bots also modified to comply with master.
+              Need to implement rpsDriver more.
+Ethan Lam :: Ideas, to implement:
+                Gauntlet
+                Win/lose quotes
+                Storylines (implement more story)
+                Inform player of bot behavior
+                move log
+Brian Kang :: V7 done, v9 started
