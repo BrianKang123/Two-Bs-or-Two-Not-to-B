@@ -23,7 +23,7 @@ public class rps{
     gameEnded = false;
   }
 
-  //get a RANDOM move
+  //get a "RANDOM" move
   public int play(int pMove){
     int aMove = -1;
     if(pMove == 0){

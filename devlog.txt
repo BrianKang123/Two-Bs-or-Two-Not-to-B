@@ -143,3 +143,13 @@ Ethan Lam :: Ideas, to implement:
                 Inform player of bot behavior
                 move log
 Brian Kang :: V7 done, v9 started
+
+2022-06-07
+--------------------------------------------------------------
+Brian Wang :: Fixed incorrect names being displayed when running games through master.
+              Made the master rpsDriver able to run ALL bots depending on what bot is entered through default main method args.
+              Fixed a bug with Sol sometimes playing the incorrect moves.
+Brian Kang :: Updated infos
+              Fixed v7
+Ethan Lam :: Fixed Eobard
+              TODO: put fixed Eobard into master

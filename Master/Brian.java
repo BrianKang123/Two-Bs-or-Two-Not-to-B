@@ -24,7 +24,7 @@ public class Brian extends rps{
     }
 
   //get a RANDOM move
-  public int play(){
+  public int play(int pMove){
     return (int)(Math.random() * 3);
   }
 

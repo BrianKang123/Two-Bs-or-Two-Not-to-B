@@ -44,7 +44,7 @@ public class rps{
   }
 
   //get a RANDOM move
-  public int play(){
+  public int play(int pMove){
     return (int)(Math.random() * 3);
   }
 
@@ -104,7 +104,7 @@ public class rps{
 
 
     //rng number
-    int gMove = play();
+    int gMove = play(pMove);
     moves.add(pMove);
     System.out.println("Player plays " + key[pMove]);
     System.out.println(name + " plays " + key[gMove]);
@@ -162,7 +162,7 @@ public class rps{
   }
 
   public String getInfo(){
-    return "placeholder";
+    return "You should not see this!";
   }
 
   public String getName(){

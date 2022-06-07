@@ -25,7 +25,7 @@ public class Gilgamesh extends rps{
     }
 
   //get a "smart" move
-  public int play(){
+  public int play(int pMove){
     //List of weights
     //Overall weight factors for final decision
     //THESE WILL LIKELY BE MANUALLY CHANGED!!!!

@@ -25,7 +25,7 @@ public class Eobard extends rps{
   }
 
   //get a RANDOM move
-  public int play(){
+  public int play(int pMove){
     if(turns <= 3){
       return (int)(Math.random() * 3);
     }
