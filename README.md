@@ -18,4 +18,5 @@
 ##### v4 - Enkidu (Smarter Gilgamesh With Improved Prediction Capabilities)
 ##### v5 - Sal (Analyzes Patterns in Playstyle To Lose in the Next Move)
 ##### v6 - Sol (Cheater Bot- Anticipates Your Moves And Wins No Matter What)
-##### v7 - 
+##### v7 - XX (Cheater Bot - Anticipates Your Moves And Loses No Matter What)
+##### v8 - Maurice (Analyzes Which Move You Have Played the Most and Will Play That Move More)
