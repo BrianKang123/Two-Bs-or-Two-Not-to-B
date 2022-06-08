@@ -153,3 +153,7 @@ Brian Kang :: Updated infos
               Fixed v7
 Ethan Lam :: Fixed Eobard
               TODO: put fixed Eobard into master
+
+2022-06-08
+--------------------------------------------------------------
+Brian Wang :: Eobard now works properly with Master
