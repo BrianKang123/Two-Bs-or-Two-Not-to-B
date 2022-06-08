@@ -158,3 +158,5 @@ Ethan Lam :: Fixed Eobard
 --------------------------------------------------------------
 Brian Wang :: Eobard now works properly with Master
               todo? WHy bot name always "Brian"?
+              Jeff and Maurice added to Master
+              Implemented quote system into Master (still placeholder)

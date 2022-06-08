@@ -31,6 +31,7 @@ public class rpsDriver{
       }
       System.out.println("You will be playing: " + botName + ",\n");
       System.out.println(newGame.getInfo() + "\n\n");
+      System.out.println("Story: \n" + newGame.getStory());
 
       botName = newGame.getName();
       newGame.game();
@@ -41,6 +42,12 @@ public class rpsDriver{
       System.out.println("Player score: " + newGame.getPScore() + " (Winrate: " + (int)(100 * pWinPercent) + "%)");
       System.out.println(botName + " score: " + newGame.getGScore() + " (Winrate: " + (int)(100 * gWinPercent) + "%)");
       System.out.println("Ties: " + newGame.getTie());
+      if(newGame.getPScore() > newGame.getGScore()){
+        System.out.println(newGame.defeat());
+      }
+      else{
+        System.out.println(newGame.victory());
+      }
     }
 
 

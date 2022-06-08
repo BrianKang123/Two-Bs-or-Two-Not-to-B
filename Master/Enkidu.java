@@ -421,6 +421,42 @@ public class Enkidu extends rps{
     return "The smartest, plays a move based on your past move patterns.";
   }
 
+  public String getStory(){
+    return "Placeholder";
+  }
 
+  public String winQuote(){
+    double rand = Math.random();
+    if(rand > 2/3){
+      return "Placeholder1";
+    }
+    else if(rand > 1/3){
+      return "Placeholder1";
+    }
+    else{
+      return "Placeholder1";
+    }
+  }
+
+  public String loseQuote(){
+    double rand = Math.random();
+    if(rand > 2/3){
+      return "Placeholder2";
+    }
+    else if(rand > 1/3){
+      return "Placeholder2";
+    }
+    else{
+      return "Placeholder2";
+    }
+  }
+
+  public String victory(){
+    return "win";
+  }
+
+  public String defeat(){
+    return "lose";
+  }
 
 }

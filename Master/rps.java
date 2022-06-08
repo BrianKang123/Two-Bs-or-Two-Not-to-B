@@ -128,6 +128,7 @@ public class rps{
     //If player wins
     if(pMove - gMove == 1 || pMove - gMove == -2){
       System.out.println("Player wins\n\n");
+      System.out.println(loseQuote() + "\n");
       pScore += 1;
       return true;
     }
@@ -135,6 +136,7 @@ public class rps{
     //If Enkidu wins
     else if(gMove - pMove == 1 || gMove - pMove == -2){
       System.out.println(name + " wins\n\n");
+      System.out.println(winQuote() + "\n");
       gScore += 1;
       return false;
     }
@@ -142,6 +144,7 @@ public class rps{
     //If tie
     else{
       System.out.println("Tie\n\n");
+      System.out.println(loseQuote() + "\n");
       tie += 1;
       return false;
     }
@@ -177,6 +180,45 @@ public class rps{
   public String getInfo(){
     return "You should not see this!";
   }
+
+  public String getStory(){
+    return "You should not see this!";
+  }
+
+  public String winQuote(){
+    double rand = Math.random();
+    if(rand > 2/3){
+      return "You should not see this!";
+    }
+    else if(rand > 1/3){
+      return "You should not see this!";
+    }
+    else{
+      return "You should not see this!";
+    }
+  }
+
+  public String loseQuote(){
+    double rand = Math.random();
+    if(rand > 2/3){
+      return "You should not see this!";
+    }
+    else if(rand > 1/3){
+      return "You should not see this!";
+    }
+    else{
+      return "You should not see this!";
+    }
+  }
+
+  public String victory(){
+    return "You should not see this!";
+  }
+
+  public String defeat(){
+    return "You should not see this!";
+  }
+
 
   public String getName(){
     return name;

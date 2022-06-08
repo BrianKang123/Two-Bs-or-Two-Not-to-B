@@ -31,6 +31,42 @@ public class Brian extends rps{
   public String getInfo(){
     return "Plays a random move every time.";
   }
+  public String getStory(){
+    return "Placeholder";
+  }
 
+  public String winQuote(){
+    double rand = Math.random();
+    if(rand > 2/3){
+      return "Placeholder";
+    }
+    else if(rand > 1/3){
+      return "Placeholder";
+    }
+    else{
+      return "Placeholder";
+    }
+  }
+
+  public String loseQuote(){
+    double rand = Math.random();
+    if(rand > 2/3){
+      return "Placeholder";
+    }
+    else if(rand > 1/3){
+      return "Placeholder";
+    }
+    else{
+      return "Placeholder";
+    }
+  }
+
+  public String victory(){
+    return "win";
+  }
+
+  public String defeat(){
+    return "lose";
+  }
 
 }
