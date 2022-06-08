@@ -157,3 +157,4 @@ Ethan Lam :: Fixed Eobard
 2022-06-08
 --------------------------------------------------------------
 Brian Wang :: Eobard now works properly with Master
+              todo? WHy bot name always "Brian"?
