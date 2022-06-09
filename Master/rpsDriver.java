@@ -35,11 +35,14 @@ public class rpsDriver{
       else{
         System.out.println("Invalid bot entered, default played");
       }
+
+      botName = newGame.getName();
+
       System.out.println("You will be playing: " + botName + ",\n");
       System.out.println(newGame.getInfo() + "\n\n");
       System.out.println("Story: \n" + newGame.getStory());
 
-      botName = newGame.getName();
+
       newGame.game();
       System.out.println(newGame.getMoveHistory());
       System.out.println("Games played: " + newGame.getTurn());

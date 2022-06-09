@@ -160,3 +160,9 @@ Brian Wang :: Eobard now works properly with Master
               todo? WHy bot name always "Brian"?
               Jeff and Maurice added to Master
               Implemented quote system into Master (still placeholder)
+
+2022-06-09
+--------------------------------------------------------------
+Brian Wang :: Master now can run all bots
+              README and run instructions updated
+              Brian no longer always displays as the bot name

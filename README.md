@@ -5,10 +5,10 @@
 
 ## How to Launch:
 ##### 1. Do `git clone git@github.com:BrianKang123/Two-Bs-or-Two-Not-to-B.git` in your terminal
-##### 2. Run `cd Two-Bs-or-Two-Not-to-B`
-##### 3. Run `javac Woo.java`
-##### 4. Run `java Woo`
-##### **TBD**
+##### 2. Run `cd Two-Bs-or-Two-Not-to-B/Master`
+##### 3. Run `javac rpsDriver.java`
+##### 4. Run `java rpsDriver` OR `java rpsDriver name` where name is the name of the bot you want to play
+##### 5. Enter your move, with either `0, 1, 2`, or by typing out your move.
 
 ## Different Bot Opponents:
 ##### v0 - Disfunctional skeleton
