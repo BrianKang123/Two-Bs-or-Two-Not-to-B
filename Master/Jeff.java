@@ -39,7 +39,7 @@ public class Jeff extends rps{
     }
 
   public String getInfo(){
-    return "Plays a random move every time.";
+    return "Not one to win.";
   }
   public String getStory(){
     return "Placeholder";

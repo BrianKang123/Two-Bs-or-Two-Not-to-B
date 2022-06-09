@@ -26,6 +26,12 @@ public class rpsDriver{
       else if(args[0].equals("Sol") || args[0].equals("sol")){
         newGame = new Sol();
       }
+      else if(args[0].equals("Jeff") || args[0].equals("jeff")){
+        newGame = new Jeff();
+      }
+      else if(args[0].equals("Maurice") || args[0].equals("maurice")){
+        newGame = new Maurice();
+      }
       else{
         System.out.println("Invalid bot entered, default played");
       }

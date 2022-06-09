@@ -39,7 +39,7 @@ public class Sol extends rps{
     }
 
   public String getInfo(){
-    return "Plays a random move every time.";
+    return "Plays a \"random\" move every time.";
   }
 
   public String getStory(){

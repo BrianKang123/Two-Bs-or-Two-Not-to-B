@@ -417,7 +417,7 @@ public class Sal extends rps{
   }
 
   public String getInfo(){
-    return "Tries to lose.";
+    return "Almost as smart as Enkidu. Almost.";
   }
   public String getStory(){
     return "Placeholder";

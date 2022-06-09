@@ -47,7 +47,7 @@ public class Maurice extends rps{
   }
 
   public String getInfo(){
-    return "Plays a move depending on your past moves played.";
+    return "Always tied up in games of rock paper scissors.";
   }
 
   public String getStory(){
