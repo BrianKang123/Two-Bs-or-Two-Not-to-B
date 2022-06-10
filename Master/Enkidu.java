@@ -418,45 +418,45 @@ public class Enkidu extends rps{
   }
 
   public String getInfo(){
-    return "The smartest, plays a move based on your past move patterns.";
+    return "The only friend of Gilgamesh. Born from a clod of earth, Enkidu is clay shaped by hands of the Gods. They are neither male nor female, but merely a monster made of mud that descended onto the earth.\nThey play moves by detecting patterns in your past move, but they are even better at it than Gilgamesh.";
   }
 
   public String getStory(){
-    return "Placeholder";
+    return "My name is Enkidu. I kill gods. Try to win.";
   }
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder1";
+    if(rand > 2.0/3.0){
+      return "If you want me to fight, I’ll fight. After all, it is not like I hate fighting.";
     }
-    else if(rand > 1/3){
-      return "Placeholder1";
+    else if(rand > 1.0/3.0){
+      return "Keep it coming.";
     }
     else{
-      return "Placeholder1";
+      return "Let me hear a good cry from you.";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
     if(rand > 2/3){
-      return "Placeholder2";
+      return "My magical energy...!";
     }
     else if(rand > 1/3){
-      return "Placeholder2";
+      return "What?";
     }
     else{
-      return "Placeholder2";
+      return "It's nothing, I can still go on...!";
     }
   }
 
   public String victory(){
-    return "win";
+    return "That's...not bad. I will awaken the breath of the planet, for I walk with humanity.\nO' Humans, Let Us Restrain the Gods.\nEnuma Elish! ";
   }
 
   public String defeat(){
-    return "lose";
+    return "Huh? I'm out of magical energy... Well done. You're pretty good.";
   }
 
 }

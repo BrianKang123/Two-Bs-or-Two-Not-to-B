@@ -47,45 +47,45 @@ public class Eobard extends rps{
   }
 
   public String getInfo(){
-    return "Plays a move depending on the number of your past moves played.";
+    return "Keeps track of your most played move and will play the advantageous move more often. \nEobard is a wanted tax fugitive in 64 countries. All IRS officers have an order to kill him on sight. He wishes to take over Florida, because they have no income tax.";
   }
 
   public String getStory(){
-    return "Placeholder";
+    return "Every year, THOUSANDS of dollars are STOLEN from me to build ROADS and ORPHANAGES!\nTHE IRS WILL NOT SEE A SINGLE CENT FROM ME!\nTHE LORD IS MY SHEPHERD; I SHALL NOT WANT. HE MAKETH ME TO LIE DOWN IN GREEN PASTURES: HE LEADETH ME BESIDE THE STILL WATERS-";
   }
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "I call down upon the great and terrible tax evading power of\n...JEFF BEZOS!";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "If I win, can I claim you as a dependent for tax purposes?";
     }
     else{
-      return "Placeholder";
+      return "TAXATION IS THEFT! I think that's how that quote goes.";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "Did the government send you here to stop me from microwaving hamster?\nJust MORE PROOF of government OPPRESSION!";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "They call this the 'Land of the Free,' so why do they keep trying to stop me from eating the cotton candy in the walls?";
     }
     else{
-      return "Placeholder";
+      return "";
     }
   }
 
   public String victory(){
-    return "win";
+    return "Finally, now that I have won, I finally have control over Florida!\n...This place is terrible.\n\nThis was a mistake.";
   }
 
   public String defeat(){
-    return "lose";
+    return "My father never loved me, but when he died by my hands, he asked me with his last dying breath: 'Son, why did you do it?'\nTears dropped down my face, and I couldn't respond. But I knew.\nI knew what he did to my brother. Mom alawys told me the wrong son had died. But-[edited out for the sake of brevity.]\n\nAnyway, so that's why I'm racist.";
   }
 
 }

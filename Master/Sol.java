@@ -39,23 +39,23 @@ public class Sol extends rps{
     }
 
   public String getInfo(){
-    return "Plays a \"random\" move every time.";
+    return "The god of time and space. Plays a \"random\" move every time.";
   }
 
   public String getStory(){
-    return "Placeholder";
+    return "I am Sol, the creator of space and time. I anticipate the future, acknowledge the past, and accompany the present.\nTry to win. If you can that is.";
   }
 
   public String winQuote(){
     double rand = Math.random();
     if(rand > 2/3){
-      return "Placeholder";
+      return "Futile.";
     }
     else if(rand > 1/3){
-      return "Placeholder";
+      return "I know the day you were born. And the day you will die. And also why the Mcdonald's ice cream machine is always broken. Give up.";
     }
     else{
-      return "Placeholder";
+      return "As was foretold.";
     }
   }
 
@@ -72,7 +72,7 @@ public class Sol extends rps{
     }
   }
   public String victory(){
-    return "win";
+    return "Witness oblivion.";
   }
 
   public String defeat(){

@@ -42,32 +42,32 @@ public class Jeff extends rps{
     return "Not one to win.";
   }
   public String getStory(){
-    return "Placeholder";
+    return "my nam jeff";
   }
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "my nam?";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "jef";
     }
     else{
-      return "Placeholder";
+      return "Greetings, gentlemen. My name is Jeffrey Jefferson, and it is a pleasure to be playing against you.";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "my nam?";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "jef";
     }
     else{
-      return "Placeholder";
+      return "Greetings, gentlemen. My name is Jeffrey Jefferson, and it is a pleasure to be playing against you. I come with an important message. I don't have much time. Please listen befor-\nmy nam jef";
     }
   }
 
@@ -76,6 +76,6 @@ public class Jeff extends rps{
   }
 
   public String defeat(){
-    return "lose";
+    return "jefreyf";
   }
 }

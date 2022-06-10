@@ -417,43 +417,43 @@ public class Sal extends rps{
   }
 
   public String getInfo(){
-    return "Almost as smart as Enkidu. Almost.";
+    return "Sal was recently just divorced, lost his kids and job, diagnosed with terminal stage 4 cancer, and his mom sold his beyblades, making him tonight's biggest loser.\nHe doesn't know this, but he analyzes patterns in your moves to lose as much as possible.";
   }
   public String getStory(){
-    return "Placeholder";
+    return "Life sucks right now, man. But I'm ok, haha. As long as I can win a game of RPS, everything will be alright.";
   }
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "Oh my god, I won?";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "Maybe my wife will take me back?";
     }
     else{
-      return "Placeholder";
+      return "I can't even feel the cancer now!";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "no, no, no it's ok if I lost it's mY FAULT... hic... sniffle";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "WHY DID YOU TAKE THE KIDS?";
     }
     else{
-      return "Placeholder";
+      return "Do you mind if I drink? Yeah... could I get a hard Similac Baby Formula?";
     }
   }
 
   public String victory(){
-    return "win";
+    return "I may have lost my job, but at least I can win at RPS! And that's worth something. I think.";
   }
 
   public String defeat(){
-    return "lose";
+    return "*uncontrollable sobbing*\n You feel awkward and leave.";
   }
 }

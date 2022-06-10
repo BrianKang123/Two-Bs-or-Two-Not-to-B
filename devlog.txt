@@ -166,3 +166,5 @@ Brian Wang :: Eobard now works properly with Master
 Brian Wang :: Master now can run all bots
               README and run instructions updated
               Brian no longer always displays as the bot name
+Ethan Lam :: Squashed some bugs preventing random quote generation.
+             Added quotes.

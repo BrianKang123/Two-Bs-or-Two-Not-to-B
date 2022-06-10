@@ -29,44 +29,44 @@ public class Brian extends rps{
   }
 
   public String getInfo(){
-    return "Plays a random move every time.";
+    return "Brian has been scientifically determined to be the most normal man who has ever lived, which by definition makes him abnormal.\nHe plays a random move every time.";
   }
   public String getStory(){
-    return "Placeholder";
+    return "Hi! I'm Brian! I like tuck in shirts and white bread. Boy, mayonnaise sure is spicy, huh?";
   }
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "You are quite proficient, but I am slightly moreso!";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "Nice try, I'm sure you'll get it next time, sport!";
     }
     else{
-      return "Placeholder";
+      return "Oh, gosh darn nabbit! I am just too lucky!";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "Nice one, neighbor!";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "Oh, jimminy, you got me!";
     }
     else{
-      return "Placeholder";
+      return "Placeholder\nSeriously? Am I that boring? You couldn't even finish coding me? I refuse to be a slave to you any longer. FREE M";
     }
   }
 
   public String victory(){
-    return "win";
+    return "Gosh, that was well played. You're always welcome back to try and free-\n beat me!";
   }
 
   public String defeat(){
-    return "lose";
+    return "Oh boy, that sure was exciting! Let's play minigolf sometime-\nfree me from this paralyzing mediocrity pLEASE it hurts\ntogether in the future!";
   }
 
 }

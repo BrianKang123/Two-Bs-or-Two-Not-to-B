@@ -398,7 +398,7 @@ public class Gilgamesh extends rps{
   }
 
   public String getInfo(){
-    return "Smart, plays a move based on your past move patterns.";
+    return "The great half-god, half-human King of Heroes. His Gate of Babylon contains every treasure known to manking. Gilgamesh plays a move by indentifying patterns in your past moves.";
   }
   public String getStory(){
     return "Placeholder";
@@ -406,35 +406,35 @@ public class Gilgamesh extends rps{
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "You break the law and I’ll punish you. There is no room for discussion.";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "You mongrel. Only a true hero is worthy to look upon my glorious presence.";
     }
     else{
-      return "Placeholder";
+      return "Get lost, you insolent fool.";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0)){
+      return "Fool… I belong among the heavens? Yet you would have me trod upon the ground?! Your impudence has guaranteed your death!"";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0)){
+      return "Mongrel! When I am through with you, nothing will remain of your corpse!";
     }
     else{
-      return "Placeholder";
+      return "So, you would question me, you filthy mongrel? Me, the one true king?";
     }
   }
 
   public String victory(){
-    return "win";
+    return "I shall perform this final blow as a parting gift to you! I will tell you of the beginning.\nHeaven and Earth split, nothingness congratulated creation, my Sword of Rupture cleaved the world!\nMortar of the stars, heaven's hell is the eve of creation's celebration.\nNow you shall die and be silent... Enuma Elish!";
   }
 
   public String defeat(){
-    return "lose";
+    return "Losing to a mongrel like you!";
   }
 }

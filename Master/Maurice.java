@@ -47,44 +47,44 @@ public class Maurice extends rps{
   }
 
   public String getInfo(){
-    return "Always tied up in games of rock paper scissors.";
+    return "Maurice is a clone of Eobard, but even MORE RACIST. He keeps track of your most played move and plays that move more often.";
   }
 
   public String getStory(){
-    return "Placeholder";
+    return "It is I, the CEO of RACISM! I- I'm about to get RACIST! aaaaaaaAAAAAAAAHHHHHHHHHHHH!";
   }
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "I'm gonna RACE ALL OVER YOU!";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "It's RACIN' TIME!";
     }
     else{
-      return "Placeholder";
+      return "Take this: RACIST BEAM!";
     }
   }
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
-      return "Placeholder";
+    if(rand > 2.0/3.0){
+      return "How- how could my racism lose?";
     }
-    else if(rand > 1/3){
-      return "Placeholder";
+    else if(rand > 1.0/3.0){
+      return "No no no! I can feel the RACISM LEAVING ME!";
     }
     else{
-      return "Placeholder";
+      return "Why isn't this working? Must I be MORE RACIST?";
     }
   }
 
   public String victory(){
-    return "win";
+    return "I've done it. I've reached ULTRA RACIST.";
   }
 
   public String defeat(){
-    return "lose";
+    return "Well... done. All my life, I just wanted to watch the race cars. But no matter how racist I became, I never saw them.\nIt seems like... you were just more racist than me. Carry on my legacy now... This is the last of my RACISM! TAKE IT FROM ME!\nYou are now the NEW CEO of racism...";
   }
 }
