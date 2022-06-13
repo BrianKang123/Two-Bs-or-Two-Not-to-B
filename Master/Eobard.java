@@ -30,10 +30,10 @@ public class Eobard extends rps{
       return (int)(Math.random() * 3);
     }
     int value = (int)(Math.random() * (turns+1));
-    System.out.println("value: " + value);
-    System.out.println("Rocks: " + rocksPlayed);
-    System.out.println("Paper: " + papersPlayed);
-    System.out.println("Scissors: " + scissorsPlayed);
+    //System.out.println("value: " + value);
+    //System.out.println("Rocks: " + rocksPlayed);
+    //System.out.println("Paper: " + papersPlayed);
+    //System.out.println("Scissors: " + scissorsPlayed);
     if(value < rocksPlayed){
       return 1;
     }

@@ -419,10 +419,10 @@ public class Gilgamesh extends rps{
 
   public String loseQuote(){
     double rand = Math.random();
-    if(rand > 2.0/3.0)){
-      return "Fool… I belong among the heavens? Yet you would have me trod upon the ground?! Your impudence has guaranteed your death!"";
+    if(rand > 2.0/3.0){
+      return "Fool… I belong among the heavens? Yet you would have me trod upon the ground?! Your impudence has guaranteed your death!";
     }
-    else if(rand > 1.0/3.0)){
+    else if(rand > 1.0/3.0){
       return "Mongrel! When I am through with you, nothing will remain of your corpse!";
     }
     else{
