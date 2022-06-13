@@ -48,10 +48,10 @@ public class Sol extends rps{
 
   public String winQuote(){
     double rand = Math.random();
-    if(rand > 2/3){
+    if(rand > 2.0/3.0){
       return "Futile.";
     }
-    else if(rand > 1/3){
+    else if(rand > 1.0/3.0){
       return "I know the day you were born. And the day you will die. And also why the Mcdonald's ice cream machine is always broken. Give up.";
     }
     else{
