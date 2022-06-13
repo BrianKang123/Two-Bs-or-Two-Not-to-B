@@ -30,25 +30,33 @@ Flesh out each category whenever necessary, appropriate.
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
+We managed to resolve pull and push issues as well as identify what singular error caused the multiple errors.
+Instead of worrying about all the errors that popped up, we acknowledged that one error was the root of the problem, whether it be 
+a parentheses missing or changing the variable type. 
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 blah blah pesky bug...
 maybe some of these will move into the Obs.Ovrcm section...
+The Master Class for the Rock Paper Scissors originally didn't recognize the different bots and applied the same bot to all.
+Now the Master Class should properly address each bot, unless a bug exists that we don't know of. 
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow! oo!...
+We learned the difference that one change can make to the entire code and the importance of keeping consistency in the code with the same 
+type variable each time. 
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-we changed ___ to ___ bc...
+we changed the v versions to actual bot names bc...
+we wanted the players to recognize the bots by their names and their identities and for it to be easier to call them from their files.
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 tales of wisdom gained...
+Copying and pasting the same code in another file doesn't definitively mean that the code will still run if the files don't match with its location or a portion of the code was changed during the move. 
 ||||||||||||||||||||||||||||||||||||||||||
-
 
 
  ______   ______   __   __   __       ______   _______
